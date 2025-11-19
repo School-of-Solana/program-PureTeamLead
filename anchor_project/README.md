@@ -1,1 +1,1 @@
-TODO
+# SubscriptionOnChain - dApp for subscriptions validation
