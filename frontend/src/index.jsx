@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Shield, Lock, Zap, CheckCircle, Clock, Pause, Play, X } from 'lucide-react';
 
-const SubscriptionDemo = () => {
+export default function SubscriptionDemo() {
     const [activeTab, setActiveTab] = useState('subscribe');
     const [selectedPlan, setSelectedPlan] = useState('monthly');
     const [subscriptionStatus, setSubscriptionStatus] = useState(null);
@@ -40,7 +40,6 @@ const SubscriptionDemo = () => {
     };
 
     return (
-        <div className="root">
             <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 text-white">
                 {/* Hero Section */}
                 <div className="container mx-auto px-4 py-16">
@@ -102,7 +101,7 @@ const SubscriptionDemo = () => {
                                             : 'hover:bg-white/5'
                                     }`}
                                 >
-                                    Manage Subscription
+                                    Manage Subscriptiont
                                 </button>
                             </div>
 
@@ -225,8 +224,5 @@ const SubscriptionDemo = () => {
                     </div>
                 </div>
             </div>
-        </div>
         );
 };
-
-export default SubscriptionDemo;

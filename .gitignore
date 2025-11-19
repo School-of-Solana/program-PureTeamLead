@@ -1,6 +1,8 @@
 .idea
 ./frontend/node_modules
 
+./anchor_project/subscription_chain/node_modules
+
 # Logs
 logs
 *.log
