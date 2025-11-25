@@ -8,8 +8,6 @@ pub mod states;
 
 declare_id!("8ZHxyWD1BV6qjBx3nk7DQJMuphC8GJpbRqaX85qC79AD");
 
-// TODO: unit tests
-
 #[program]
 pub mod subscription_chain {
     use super::*;
