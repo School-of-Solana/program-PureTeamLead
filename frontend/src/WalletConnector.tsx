@@ -1,9 +1,8 @@
-import { FC, ReactNode, useMemo } from "react";
+import { type FC, type ReactNode, useMemo } from "react";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from "@solana/wallet-adapter-wallets";
-
-// require("@solana/wallet-adapter-react-ui/styles.css");
+import '@solana/wallet-adapter-react-ui/styles.css';
 
 export const WalletConnectionProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const wallets = useMemo(() => [

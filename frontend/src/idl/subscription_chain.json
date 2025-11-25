@@ -1,0 +1,646 @@
+{
+  "address": "BJfGuRJCSSvEKJzkAWhotuDKo6DQVG6MRWJ5n316HEqU",
+  "metadata": {
+    "name": "subscription_chain",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "cancel_subscription",
+      "discriminator": [
+        60,
+        139,
+        189,
+        242,
+        191,
+        208,
+        143,
+        18
+      ],
+      "accounts": [
+        {
+          "name": "subscriber",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "subscription"
+          ]
+        },
+        {
+          "name": "subscription",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  83,
+                  85,
+                  66,
+                  83,
+                  67,
+                  82,
+                  73,
+                  80,
+                  84,
+                  73,
+                  79,
+                  78,
+                  95,
+                  83,
+                  69,
+                  69,
+                  68
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "subscriber"
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "create_creator_profile",
+      "discriminator": [
+        139,
+        244,
+        127,
+        145,
+        95,
+        172,
+        140,
+        154
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "monthly_price",
+          "type": "u64"
+        },
+        {
+          "name": "quartal_price",
+          "type": "u64"
+        },
+        {
+          "name": "annual_price",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "extend_subscription",
+      "discriminator": [
+        47,
+        230,
+        116,
+        118,
+        171,
+        228,
+        24,
+        46
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true
+        },
+        {
+          "name": "subscriber",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "subscription"
+          ]
+        },
+        {
+          "name": "subscription",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  83,
+                  85,
+                  66,
+                  83,
+                  67,
+                  82,
+                  73,
+                  80,
+                  84,
+                  73,
+                  79,
+                  78,
+                  95,
+                  83,
+                  69,
+                  69,
+                  68
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "subscriber"
+              }
+            ]
+          }
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "typ",
+          "type": {
+            "defined": {
+              "name": "SubscriptionType"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [],
+      "args": []
+    },
+    {
+      "name": "pause_subscription",
+      "discriminator": [
+        18,
+        180,
+        147,
+        157,
+        114,
+        60,
+        213,
+        241
+      ],
+      "accounts": [
+        {
+          "name": "subscriber",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "subscription"
+          ]
+        },
+        {
+          "name": "subscription",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  83,
+                  85,
+                  66,
+                  83,
+                  67,
+                  82,
+                  73,
+                  80,
+                  84,
+                  73,
+                  79,
+                  78,
+                  95,
+                  83,
+                  69,
+                  69,
+                  68
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "subscriber"
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "resume_subscription",
+      "discriminator": [
+        122,
+        92,
+        183,
+        0,
+        139,
+        188,
+        185,
+        71
+      ],
+      "accounts": [
+        {
+          "name": "subscriber",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "subscription"
+          ]
+        },
+        {
+          "name": "subscription",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  83,
+                  85,
+                  66,
+                  83,
+                  67,
+                  82,
+                  73,
+                  80,
+                  84,
+                  73,
+                  79,
+                  78,
+                  95,
+                  83,
+                  69,
+                  69,
+                  68
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "subscriber"
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "subscription",
+      "discriminator": [
+        129,
+        211,
+        214,
+        238,
+        4,
+        12,
+        27,
+        25
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "subscriber",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "subscription",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  83,
+                  85,
+                  66,
+                  83,
+                  67,
+                  82,
+                  73,
+                  80,
+                  84,
+                  73,
+                  79,
+                  78,
+                  95,
+                  83,
+                  69,
+                  69,
+                  68
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "subscriber"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "typ",
+          "type": {
+            "defined": {
+              "name": "SubscriptionType"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "update_creator_price",
+      "discriminator": [
+        224,
+        111,
+        228,
+        70,
+        7,
+        90,
+        103,
+        184
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "config"
+          ]
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "monthly_price",
+          "type": {
+            "option": "u64"
+          }
+        },
+        {
+          "name": "quartal_price",
+          "type": {
+            "option": "u64"
+          }
+        },
+        {
+          "name": "annual_price",
+          "type": {
+            "option": "u64"
+          }
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Config",
+      "discriminator": [
+        155,
+        12,
+        170,
+        224,
+        30,
+        250,
+        204,
+        130
+      ]
+    },
+    {
+      "name": "Subscription",
+      "discriminator": [
+        64,
+        7,
+        26,
+        135,
+        102,
+        132,
+        98,
+        33
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "PriceTooLow",
+      "msg": "Price is too low"
+    },
+    {
+      "code": 6001,
+      "name": "ConfigAlreadyInitialized",
+      "msg": "Config already initialized"
+    },
+    {
+      "code": 6002,
+      "name": "PausedSubscription",
+      "msg": "Subscription paused"
+    },
+    {
+      "code": 6003,
+      "name": "AlreadyPausedSubscription",
+      "msg": "Subscription already paused"
+    },
+    {
+      "code": 6004,
+      "name": "ExpiredSubscription",
+      "msg": "Subscription expired"
+    },
+    {
+      "code": 6005,
+      "name": "NotPausedSubscription",
+      "msg": "Subscription is not paused"
+    },
+    {
+      "code": 6006,
+      "name": "InvalidCreator",
+      "msg": "Invalid creator"
+    }
+  ],
+  "types": [
+    {
+      "name": "Config",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "creator",
+            "type": "pubkey"
+          },
+          {
+            "name": "month_price",
+            "type": "u64"
+          },
+          {
+            "name": "quartal_price",
+            "type": "u64"
+          },
+          {
+            "name": "annual_price",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Subscription",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "subscriber",
+            "type": "pubkey"
+          },
+          {
+            "name": "paused_at",
+            "type": "i64"
+          },
+          {
+            "name": "typ",
+            "type": {
+              "defined": {
+                "name": "SubscriptionType"
+              }
+            }
+          },
+          {
+            "name": "end_timestamp",
+            "type": "i64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SubscriptionType",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Month"
+          },
+          {
+            "name": "Quartal"
+          },
+          {
+            "name": "Annual"
+          }
+        ]
+      }
+    }
+  ]
+}

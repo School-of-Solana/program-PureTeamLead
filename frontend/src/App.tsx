@@ -1,10 +1,10 @@
-import SubscriptionDemo from "./index.jsx";
+import SubscriptionApp from "./SubscriptionApp";
 import { WalletConnectionProvider } from "./WalletConnector";
 
 export default function App() {
     return (
         <WalletConnectionProvider>
-            <SubscriptionDemo />
+            <SubscriptionApp />
         </WalletConnectionProvider>
     );
 }
