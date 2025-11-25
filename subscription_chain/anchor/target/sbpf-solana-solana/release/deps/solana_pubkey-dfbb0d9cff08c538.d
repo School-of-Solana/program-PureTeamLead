@@ -1,0 +1,8 @@
+/Users/themaxs/solana/dapp/subscription_chain/anchor/target/sbpf-solana-solana/release/deps/libsolana_pubkey-dfbb0d9cff08c538.rmeta: /Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/lib.rs /Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/syscalls.rs
+
+/Users/themaxs/solana/dapp/subscription_chain/anchor/target/sbpf-solana-solana/release/deps/libsolana_pubkey-dfbb0d9cff08c538.rlib: /Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/lib.rs /Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/syscalls.rs
+
+/Users/themaxs/solana/dapp/subscription_chain/anchor/target/sbpf-solana-solana/release/deps/solana_pubkey-dfbb0d9cff08c538.d: /Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/lib.rs /Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/syscalls.rs
+
+/Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/lib.rs:
+/Users/themaxs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-pubkey-2.3.0/src/syscalls.rs:

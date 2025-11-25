@@ -1,1 +1,0 @@
-# SubscriptionOnChain - dApp for subscriptions validation
