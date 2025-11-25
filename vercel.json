@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd subscription_chain && npm run build",
+  "outputDirectory": "subscription_chain/.next",
+  "installCommand": "cd subscription_chain && npm install",
+  "framework": "nextjs",
+  "devCommand": "cd subscription_chain && npm run dev"
+}

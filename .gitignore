@@ -1,5 +1,7 @@
 .idea
 ./frontend/node_modules
+subscription_chain/node_modules
+subscription_chain/.next
 
 ./anchor_project/subscription_chain/node_modules
 
