@@ -1,6 +1,6 @@
 # Project Description
 
-**Deployed Frontend URL:** https://subscription-chain.vercel.app
+**Deployed Frontend URL:** https://program-solana-pureteamlead.vercel.app
 
 **Solana Program ID:** 8ZHxyWD1BV6qjBx3nk7DQJMuphC8GJpbRqaX85qC79AD
 

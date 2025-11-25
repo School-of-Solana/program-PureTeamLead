@@ -4,7 +4,7 @@ import { PublicKey } from '@solana/web3.js';
 import { assert } from "chai";
 import { SubscriptionChain } from "../target/types/subscription_chain";
 import BN from "bn.js";
-import { describe, it } from "node:test";
+import { describe, it } from "mocha";
 
 const CONFIG_SEED = "config";
 const SUBSCRIPTION_SEED = "SUBSCRIPTION_SEED";

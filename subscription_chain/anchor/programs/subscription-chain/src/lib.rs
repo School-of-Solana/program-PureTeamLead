@@ -6,7 +6,7 @@ pub mod error;
 pub mod instructions;
 pub mod states;
 
-declare_id!("8ZHxyWD1BV6qjBx3nk7DQJMuphC8GJpbRqaX85qC79AD");
+declare_id!("BJfGuRJCSSvEKJzkAWhotuDKo6DQVG6MRWJ5n316HEqU");
 
 // TODO: unit tests
 

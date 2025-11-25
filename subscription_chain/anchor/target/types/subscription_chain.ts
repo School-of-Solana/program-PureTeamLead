@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/subscription_chain.json`.
  */
 export type SubscriptionChain = {
-  "address": "8ZHxyWD1BV6qjBx3nk7DQJMuphC8GJpbRqaX85qC79AD",
+  "address": "BJfGuRJCSSvEKJzkAWhotuDKo6DQVG6MRWJ5n316HEqU",
   "metadata": {
     "name": "subscriptionChain",
     "version": "0.1.0",
