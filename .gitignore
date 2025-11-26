@@ -2,6 +2,7 @@
 ./frontend/node_modules
 subscription_chain/node_modules
 subscription_chain/.next
+subscription_chain/anchor/node_modules
 
 ./anchor_project/subscription_chain/node_modules
 
